@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "VictoMono Nerd Font:pixelsize=13:antialias=true:autohint=true";
+static char *font = "VictorMono Nerd Font:pixelsize=13:antialias=true:autohint=true";
 #if FONT2_PATCH
 /* Spare fonts */
 static char *font2[] = {
@@ -44,7 +44,7 @@ static char *url_opener = "xdg-open";
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/usr/bin/zsh";
+static char *shell = "/bin/bash";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -162,32 +162,50 @@ float alphaUnfocused = 0.6;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#1f1f20",
-	"#fb055a",
-	"#26ffd4",
-	"#fdaa5a",
-	"#5c9fff",
-	"#fc59a6",
-	"#26ffd4",
-	"#f0f0f0",
+	// "#1f1f20",
+	// "#fb055a",
+	// "#26ffd4",
+	// "#fdaa5a",
+	// "#5c9fff",
+	// "#fc59a6",
+	// "#26ffd4",
+	// "#f0f0f0",
 
+	"#37323e",
+	"#F94144",
+	"#90BE6D",
+	"#F9C74F",
+	"#577590",
+	"#F3722C",
+	"#43AA8B",
+	"#ebf5df",
 	/* 8 bright colors */
-	"#5c6370",
-	"#fb055a",
-	"#26ffd4",
-	"#febe7e",
-	"#55adff",
-	"#fd95d0",
-	"#26ffd4",
-	"#f0f0f0",
+	// "#5c6370",
+	// "#fb055a",
+	// "#26ffd4",
+	// "#febe7e",
+	// "#55adff",
+	// "#fd95d0",
+	// "#26ffd4",
+	// "#f0f0f0",
+
+	"#343330",
+	"#F94144",
+	"#90BE6D",
+	"#F9C74F",
+	"#577590",
+	"#F3722C",
+	"#43AA8B",
+	"#edf9ef",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#f1f1f1", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#0b0c0c", /* 258 -> bg */
-	"#e5e5e5", /* 259 -> fg */
+	// "#0b0c0c", /* 258 -> bg */
+	"#03071e", /* 258 -> bg */
+	"#ffffff", /* 259 -> fg */
 };
 
 
